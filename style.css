@@ -1,0 +1,131 @@
+/* general */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/* VARIABLES */
+:root {
+	/* font */
+	--fontfamily: 'Cormorant Garamond', serif;
+	--fontweight-light: 300;
+	--fontweight-regular: 400;
+	--fontweight-medium: 500;
+
+	/* colors*/
+	--color-dark: #11111af1;
+	--color-gray: #1B1B27;
+	--color-light: #f7f4e9;
+
+}
+
+
+
+/* BODY */
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("/img/concrete-2.jpg");
+}
+
+
+
+/* LIST CONTAINER */
+.list {
+	font-family: var(--fontfamily);
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 17.5rem;
+	color: var(--color-light);
+}
+
+
+/* list header */
+.list__header {
+	text-align: center;
+	width: 100%;
+	padding: 5px;
+	background: var(--color-dark);
+}
+
+.list__title {
+	padding: 2px;
+	font-size: 1.875rem;
+	font-weight: var(--fontweight-regular);
+	color: var(--color-light);
+}
+
+.list__add {
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.list__input {
+	border: 2px double #c5c3c6;
+	background: none;
+	outline: none;
+	padding: 2px 5px;
+	width: 88%;
+	color: var(--color-light);
+	font-size: 1rem;
+	font-weight: var(--fontweight-regular);
+	font-family: var(--fontfamily);
+
+}
+
+.list__input::placeholder {
+	font-size: 1rem;
+	font-weight: var(--fontweight-medium);
+}
+
+.list__btn {
+	width: 10%;
+	padding: 2px 5px;
+	background: none;
+	outline: none;
+	border: 2px double #c5c3c6;
+	font-size: 1rem;
+	color: var(--color-light);
+	cursor: pointer;
+}
+
+.list__btn:active {
+	transform: scale(.97);
+}
+
+
+/* list tasks */
+.list__tasks {
+	width: 100%;
+	text-align: left;
+	margin-top: 5px;
+}
+
+.list__item {
+	list-style-type: none;
+	margin-bottom: 5px;
+	border: 2px double var(--color-dark);
+	padding: 2px 5px;
+	font-weight: var(--fontweight-medium);
+	font-size: 1rem;
+	background: #e8e8e862;
+	color: var(--color-dark);
+	cursor: pointer;
+}
+
+.list__item:hover {
+	transform: scale(1.02);
+	transition: .1s ease;
+}
+
+.checked {
+text-decoration: 1px line-through var(--color-dark);
+}

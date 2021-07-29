@@ -1,9 +1,10 @@
-/* general */
+/* GENERAL */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
 
 
 /* VARIABLES */
@@ -29,7 +30,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-image: url("/img/concrete-2.jpg");
+	background-image: url("concrete-2.jpg");
 }
 
 

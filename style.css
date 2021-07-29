@@ -130,3 +130,91 @@ body {
 .checked {
 text-decoration: 1px line-through var(--color-dark);
 }
+
+
+
+/* RESPONSIVE WEB DESIGN  - MOBILE FIRST*/
+
+/* min width 768px */
+@media screen and (min-width: 768px) {
+	.list {
+		width: 25rem;
+	}
+
+	.list__title {
+		font-size: 3rem;
+	}
+
+	.list__input {
+	font-size: 1.5rem;
+	}
+
+	.list__input::placeholder {
+	font-size: 1.5rem;
+	}
+
+	.list__btn {
+		font-size: 1.5rem;
+	}
+	
+	.list__item {
+		font-size: 1.5rem;
+
+	}
+}
+
+/* min width 1200px */
+@media screen and (min-width: 1200px) {
+	.list {
+		width: 35rem;
+	}
+
+	.list__title {
+		font-size: 3.5rem;
+	}
+	
+	.list__input {
+	font-size: 2rem;
+	}
+
+	.list__input::placeholder {
+	font-size: 2rem;
+	}
+
+	
+	.list__btn {
+		font-size: 2rem;
+	}
+	
+	.list__item {
+		font-size: 2rem;
+	}
+}
+
+/* min width 1600px */
+@media screen and (min-width: 1600px) {
+	.list {
+		width: 40rem;
+	}
+
+	.list__title {
+		font-size: 3.5rem;
+	}
+	
+	.list__input {
+	font-size: 2rem;
+	}
+
+	.list__input::placeholder {
+	font-size: 2rem;
+	}
+
+	
+	.list__btn {
+		font-size: 2rem;
+	}
+	
+	.list__item {
+		font-size: 2rem;
+	}
+}
